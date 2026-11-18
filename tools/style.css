@@ -84,7 +84,7 @@ address{font-style:normal;display:grid;gap:12px;align-content:start}
 address p{display:flex;gap:12px}
 address .i{color:var(--acc)}
 .hrs{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0;padding-left:36px;font-size:var(--sm)}.hrs dt{color:var(--mut)}.hrs dd{margin:0;font-variant-numeric:tabular-nums;font-weight:600}
-.soc{font-size:var(--sm);color:var(--mut);padding-left:36px}
+address .soc{display:block;font-size:var(--sm);line-height:1.75;color:var(--mut);padding-left:36px}
 address>.lnk{padding-left:36px}
 footer{padding:32px 0;font-size:var(--xs);color:var(--mut)}
 footer p+p{margin-top:8px}
