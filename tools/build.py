@@ -125,9 +125,9 @@ out = f'''<!DOCTYPE html>
 
 <main id="main">
 <section class="hero" id="top"><div class="w">
-  <p class="eye">{t("Pièces auto neuves · Dakar", "New auto parts · Dakar")}</p>
-  {t("La bonne pièce pour votre véhicule, du premier coup.", "The right part for your vehicle, the first time.", "h1")}
-  {t("Dites-nous ce que vous conduisez et ce qu'il vous faut. Nous vérifions la compatibilité, puis nous vous proposons des options selon votre budget.", "Tell us what you drive and what you need. We check fitment, then offer options to match your budget.", "p", "lead")}
+  <p class="eye">{t("Planet Auto-Hub · Dakar", "Planet Auto-Hub · Dakar")}</p>
+  {t("Votre partenaire de confiance en pièces et service auto.", "Your trusted automotive parts & service partner.", "h1")}
+  {t("Pièces de qualité. Compatibilité vérifiée. Service fiable. Conçu pour le Sénégal.", "Quality parts. Verified compatibility. Reliable service. Built for Senegal.", "p", "lead")}
   {duo()}
   <ul class="facts">
     <li><b>{t("Compatibilité vérifiée", "Fitment verified")}</b>{t("par numéro de châssis ou référence", "by chassis number or reference")}</li>
