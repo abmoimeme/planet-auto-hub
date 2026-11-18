@@ -89,12 +89,14 @@ def make_card(m):
 
 css = open('style.css').read()
 js = open('app.js').read()
+track = open('track.js').read()
+PAH_T = {'p': 'jaay-69598', 's': 'pah', 'k': 'AIzaSyDDY750URij5tWFcnsVlN_vrm46DoNtwpQ', 'n': {W1: '1', W2: '2'}}
 out = f'''<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; font-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; font-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; connect-src https://firestore.googleapis.com">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Planet Auto Hub · Pièces auto à Dakar</title>
 <meta name="description" content="Pièces auto neuves à Dakar : filtres, freinage, suspension, batteries, lubrifiants. Compatibilité vérifiée avec votre numéro de châssis. Écrivez-nous sur WhatsApp.">
@@ -194,13 +196,14 @@ out = f'''<!DOCTYPE html>
 
 <footer><div class="w">
   <p><b>PLANET AUTO-HUB SUARL</b> · Rond-Point Liberté 6, Dakar, Sénégal · RCCM SN DKR 2025 B 40566 · NINEA 012552396</p>
-  <p>{t("Ce site ne collecte aucune donnée personnelle : pas de formulaire, pas de cookie, pas de mesure d'audience. Vos messages WhatsApp sont traités dans WhatsApp, selon ses propres règles.", "This site collects no personal data: no forms, no cookies, no analytics. Your WhatsApp messages are handled within WhatsApp, under its own terms.")}</p>
+  <p>{t("Mesure d'audience anonyme, sans cookie ni publicité : pages consultées, clics sur les boutons, durée de visite, type d'appareil, langue, fuseau horaire et site d'origine, avec un identifiant aléatoire gardé dans votre navigateur. Pas de nom, pas de téléphone, pas de partage avec des tiers ; les données sont stockées chez Google (Firebase) pour Planet Auto Hub. Désactivée si votre navigateur envoie « Ne pas suivre ». Pas de formulaire : vos messages WhatsApp sont traités dans WhatsApp, selon ses propres règles.", "Anonymous audience measurement, no cookies and no ads: pages viewed, button clicks, visit length, device type, language, time zone and referring site, with a random ID kept in your browser. No name, no phone number, no sharing with third parties; data is stored with Google (Firebase) for Planet Auto Hub. Off if your browser sends Do Not Track. No forms: your WhatsApp messages are handled within WhatsApp, under its own terms.")}</p>
   <p>{t("Photos : Unsplash. Les marques visibles appartiennent à leurs propriétaires.", "Photos: Unsplash. Visible brands belong to their owners.")}</p>
   <p>© 2026 Planet Auto Hub</p>
 </div></footer>
 
 <a class="dock" href="{wa(W1, MSG)}" target="_blank" rel="noopener">{ic("chat")}{t("Écrire sur WhatsApp", "Message us on WhatsApp")}</a>
 <script>const MSG_FR={json.dumps(MSG, ensure_ascii=False)},MSG_EN={json.dumps(MSG_EN)};{js}</script>
+<script>const PAH_T={json.dumps(PAH_T)};{track}</script>
 </body>
 </html>
 '''

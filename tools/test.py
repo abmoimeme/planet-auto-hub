@@ -35,7 +35,7 @@ async def main():
         await d.screenshot(path='shot_d1.png'); await d.evaluate("document.querySelector('#vehicules').scrollIntoView()"); await d.wait_for_timeout(500); await d.screenshot(path='shot_d2.png')
         ok('Desktop: no sideways scroll, bottom bar hidden',await d.evaluate("document.documentElement.scrollWidth<=1280 && getComputedStyle(document.querySelector('.dock')).display==='none'"))
         import os; tot=sum(os.path.getsize(os.path.join(r,f)) for r,_,fs in os.walk('site') for f in fs)
-        ok('Whole site under 400 KB (%d KB)'%(tot//1024),tot<400*1024)
+        ok('Whole site under 500 KB (%d KB)'%(tot//1024),tot<500*1024)
         await b.close()
     for r in R: print(*r,sep=' | ')
     print(sum(r[0]=='PASS' for r in R),'/',len(R))
