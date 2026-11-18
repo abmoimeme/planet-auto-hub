@@ -181,7 +181,7 @@ out = f'''<!DOCTYPE html>
         <dt>{t("Samedi", "Saturday")}</dt><dd>9h00 – 20h00</dd>
         <dt>{t("Dimanche", "Sunday")}</dt><dd>{t("Fermé", "Closed")}</dd>
       </dl>
-      <p class="soc">TikTok : <a class="lnk" href="https://www.tiktok.com/@planetautohub" target="_blank" rel="noopener">@planetautohub</a><br>Facebook : Planet Auto Hub<br>Instagram : @PlanetAutoHub</p>
+      <p class="soc">TikTok : <a class="lnk" href="https://www.tiktok.com/@planetautohub" target="_blank" rel="noopener">@planetautohub</a><br>Facebook : Planet Auto Hub<br>Instagram : <a class="lnk" href="https://www.instagram.com/planetautohub" target="_blank" rel="noopener">@planetautohub</a></p>
     </address>
   </div>
 </div></section>
