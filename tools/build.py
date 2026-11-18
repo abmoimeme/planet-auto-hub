@@ -100,7 +100,9 @@ out = f'''<!DOCTYPE html>
 <meta name="description" content="Pièces auto neuves à Dakar : filtres, freinage, suspension, batteries, lubrifiants. Compatibilité vérifiée avec votre numéro de châssis. Écrivez-nous sur WhatsApp.">
 <meta property="og:title" content="Planet Auto Hub · Pièces auto à Dakar">
 <meta property="og:description" content="Pièces neuves, compatibilité vérifiée, commande sur WhatsApp. Rond-Point Liberté 6, Dakar.">
-<meta property="og:image" content="assets/og.jpg">
+<meta property="og:image" content="https://planetautohub.com/assets/og.jpg">
+<meta property="og:url" content="https://planetautohub.com/">
+<link rel="canonical" href="https://planetautohub.com/">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#3D469C">
 <link rel="icon" href="assets/icon.png">
