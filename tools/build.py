@@ -104,7 +104,9 @@ out = f'''<!DOCTYPE html>
 <meta property="og:url" content="https://planetautohub.com/">
 <link rel="canonical" href="https://planetautohub.com/">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#3D469C">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111318" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="assets/icon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
 <link rel="preload" href="assets/montserrat.woff2" as="font" type="font/woff2" crossorigin>
@@ -113,7 +115,7 @@ out = f'''<!DOCTYPE html>
 <body>
 <a class="skip" href="#main">{t("Aller au contenu", "Skip to content")}</a>
 <header class="top"><div class="w bar">
-  <a class="logo" href="#top" aria-label="Planet Auto Hub"><img src="assets/logo.webp" alt="Planet Auto Hub" width="122" height="64"></a>
+  <a class="logo" href="#top" aria-label="Planet Auto Hub"><picture><source srcset="assets/logo-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/logo.webp" alt="Planet Auto Hub" width="122" height="64"></picture></a>
   <nav class="nav" aria-label="Sections">
     <a href="#pieces">{t("Pièces", "Parts")}</a><a href="#vehicules">{t("Véhicules", "Vehicles")}</a><a href="#services">{t("Services", "Services")}</a><a href="#contact">{t("Contact", "Contact")}</a>
   </nav>

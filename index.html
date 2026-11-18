@@ -13,14 +13,18 @@
 <meta property="og:url" content="https://planetautohub.com/">
 <link rel="canonical" href="https://planetautohub.com/">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#3D469C">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111318" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="assets/icon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
 <link rel="preload" href="assets/montserrat.woff2" as="font" type="font/woff2" crossorigin>
 <style>/* Planet Auto Hub. 4px grid. One accent (brand indigo). One family (Montserrat). 1px borders, no shadows. 150ms colour transitions. */
 @font-face{font-family:"Montserrat";src:url(assets/montserrat.woff2) format("woff2");font-weight:100 900;font-display:swap}
-:root{--bg:#FFFFFF;--s2:#F5F5F3;--ink:#16181D;--mut:#5C606B;--line:#E2E2DE;--line2:#C9C9C4;--acc:#3D469C;--acc-ink:#FFFFFF;
+:root{--bg:#FFFFFF;--s2:#F5F5F3;--ink:#16181D;--mut:#5C606B;--line:#E2E2DE;--line2:#C9C9C4;--acc:#3D469C;--acc-ink:#FFFFFF;--acc-t:#3D469C;
   --f:"Montserrat","Segoe UI",Helvetica,Arial,sans-serif;--xs:.75rem;--sm:.875rem;--md:1rem;--lg:1.25rem;--xl:1.75rem;--xxl:2.5rem;--e:150ms ease}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#111318;--s2:#171A21;--ink:#E8E9EE;--mut:#9DA2AF;--line:#2A2E38;--line2:#3D424E;--acc:#4650B4;--acc-ink:#FFFFFF;--acc-t:#A9B0F7}
+  .mk-l{width:72px;height:48px}.mk-l:has(img){background:#FFFFFF;border-radius:4px;padding:4px}.mk-b{padding-left:100px}.mk-l img{max-width:60px;max-height:38px}}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 var(--md)/1.5 var(--f);padding-bottom:72px}
@@ -30,7 +34,7 @@ h2{font-size:var(--xl);line-height:1.2;font-weight:800;letter-spacing:-.01em}
 h3{font-size:var(--md);line-height:1.3;font-weight:700}
 a{color:inherit}
 img{display:block;max-width:100%}
-:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+:focus-visible{outline:2px solid var(--acc-t);outline-offset:2px}
 .w{max-width:1120px;margin:0 auto;padding:0 16px}
 .skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--bg);padding:8px 12px;z-index:9}
 .i{width:24px;height:24px;flex:none;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
@@ -39,7 +43,7 @@ img{display:block;max-width:100%}
 .logo img{height:40px;width:auto}
 .nav{display:none;gap:24px;margin-left:24px;font-size:var(--sm);font-weight:600}
 .nav a{text-decoration:none;color:var(--mut);padding:8px 0;border-bottom:2px solid transparent;transition:color var(--e),border-color var(--e)}
-.nav a:hover{color:var(--ink);border-bottom-color:var(--acc)}
+.nav a:hover{color:var(--ink);border-bottom-color:var(--acc-t)}
 .lang{margin-left:auto;min-width:44px;height:44px;border:1px solid var(--line2);background:var(--bg);border-radius:4px;font:700 var(--sm)/1 var(--f);color:var(--ink);cursor:pointer;transition:border-color var(--e)}
 .lang:hover{border-color:var(--ink)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 20px;border:1px solid var(--line2);border-radius:4px;background:var(--bg);color:var(--ink);font-weight:700;font-size:var(--md);line-height:1.25;text-decoration:none;transition:background-color var(--e),border-color var(--e),opacity var(--e)}
@@ -51,7 +55,7 @@ img{display:block;max-width:100%}
 section{padding:48px 0;border-bottom:1px solid var(--line)}
 section.alt{background:var(--s2)}
 .hero{padding:40px 0 48px}
-.eye{font-size:var(--xs);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--acc);margin-bottom:12px}
+.eye{font-size:var(--xs);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--acc-t);margin-bottom:12px}
 .lead{font-size:var(--md);color:var(--mut);margin-top:16px;max-width:56ch}
 .sub{color:var(--mut);margin-top:8px;max-width:64ch}
 .facts{list-style:none;display:grid;grid-template-columns:1fr;margin-top:32px;border:1px solid var(--line);border-radius:8px}
@@ -62,11 +66,11 @@ section.alt{background:var(--s2)}
 .g3{grid-template-columns:1fr;margin-top:24px;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--bg)}
 .cell{padding:20px 16px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:24px 1fr;column-gap:12px;row-gap:4px}
 .cell:last-child{border-bottom:0}
-.cell .i{color:var(--acc);grid-row:1/3}
+.cell .i{color:var(--acc-t);grid-row:1/3}
 .cell p{font-size:var(--sm);color:var(--mut);grid-column:2}
 .pc{display:block;padding:0 0 20px}.pc .ph{display:block;width:100%;height:auto;aspect-ratio:8/5;object-fit:cover;margin-bottom:16px;background:var(--s2)}.pc h3,.pc p{padding:0 16px}.pc p{margin-top:4px}
 .tiers{display:grid;grid-template-columns:1fr;gap:16px;margin-top:24px}
-.tiers>div{border-left:2px solid var(--acc);padding-left:12px}
+.tiers>div{border-left:2px solid var(--acc-t);padding-left:12px}
 .tiers p{font-size:var(--sm);color:var(--mut);margin-top:4px}
 .grp{margin-top:32px}
 .grp>h3{font-size:var(--xs);letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-bottom:8px}
@@ -81,28 +85,28 @@ section.alt{background:var(--s2)}
 .mk-t{font-size:var(--xs);font-weight:800;letter-spacing:.02em;text-align:center;line-height:1.1;color:var(--mut)}
 .mk-n{font-weight:700;flex:1}
 .mk-c{font-size:var(--xs);color:var(--mut);font-variant-numeric:tabular-nums}
-.mk-c:not(:empty)::after{content:" +";font-weight:700;color:var(--acc)}
+.mk-c:not(:empty)::after{content:" +";font-weight:700;color:var(--acc-t)}
 .mk[open] .mk-c::after{content:" −"}
 .mk-b{padding:0 16px 16px 92px;display:grid;gap:8px}
 .models{font-size:var(--sm);color:var(--mut)}
-.lnk{font-weight:700;font-size:var(--sm);color:var(--acc);text-underline-offset:4px}
+.lnk{font-weight:700;font-size:var(--sm);color:var(--acc-t);text-underline-offset:4px}
 .note{font-size:var(--xs);color:var(--mut);margin-top:24px}
 .steps{list-style:none;display:grid;grid-template-columns:1fr;gap:16px;margin-top:24px}
 .steps li{display:flex;gap:12px}
-.steps .n{width:32px;height:32px;flex:none;border:1px solid var(--acc);color:var(--acc);border-radius:4px;display:grid;place-items:center;font-weight:800;font-size:var(--sm)}
+.steps .n{width:32px;height:32px;flex:none;border:1px solid var(--acc-t);color:var(--acc-t);border-radius:4px;display:grid;place-items:center;font-weight:800;font-size:var(--sm)}
 .steps p{font-size:var(--sm);color:var(--mut);margin-top:4px}
-.tip{margin-top:24px;padding:12px 16px;border-left:2px solid var(--acc);background:var(--bg);font-size:var(--sm)}
+.tip{margin-top:24px;padding:12px 16px;border-left:2px solid var(--acc-t);background:var(--bg);font-size:var(--sm)}
 .contact{display:grid;grid-template-columns:1fr;gap:24px;margin-top:24px}
 .lines{display:grid;gap:8px}
-.line{display:flex;align-items:center;gap:12px;min-height:64px;padding:12px 16px;border:1px solid var(--acc);border-radius:8px;text-decoration:none;transition:background-color var(--e)}
-.line:first-child{background:var(--acc);color:var(--acc-ink)}
+.line{display:flex;align-items:center;gap:12px;min-height:64px;padding:12px 16px;border:1px solid var(--acc-t);border-radius:8px;text-decoration:none;transition:background-color var(--e)}
+.line:first-child{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
 .line:hover{opacity:.92}
 .line b{display:block}
 .num{font-variant-numeric:tabular-nums;font-size:var(--sm)}
 .calls{display:flex;gap:12px;align-items:center;font-size:var(--sm);color:var(--mut);padding:8px 16px}
 address{font-style:normal;display:grid;gap:12px;align-content:start}
 address p{display:flex;gap:12px}
-address .i{color:var(--acc)}
+address .i{color:var(--acc-t)}
 .hrs{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0;padding-left:36px;font-size:var(--sm)}.hrs dt{color:var(--mut)}.hrs dd{margin:0;font-variant-numeric:tabular-nums;font-weight:600}
 address .soc{display:block;font-size:var(--sm);line-height:1.75;color:var(--mut);padding-left:36px}
 address>.lnk{padding-left:36px}
@@ -135,7 +139,7 @@ footer p+p{margin-top:8px}
 <body>
 <a class="skip" href="#main"><span  data-en="Skip to content">Aller au contenu</span></a>
 <header class="top"><div class="w bar">
-  <a class="logo" href="#top" aria-label="Planet Auto Hub"><img src="assets/logo.webp" alt="Planet Auto Hub" width="122" height="64"></a>
+  <a class="logo" href="#top" aria-label="Planet Auto Hub"><picture><source srcset="assets/logo-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/logo.webp" alt="Planet Auto Hub" width="122" height="64"></picture></a>
   <nav class="nav" aria-label="Sections">
     <a href="#pieces"><span  data-en="Parts">Pièces</span></a><a href="#vehicules"><span  data-en="Vehicles">Véhicules</span></a><a href="#services"><span  data-en="Services">Services</span></a><a href="#contact"><span  data-en="Contact">Contact</span></a>
   </nav>
