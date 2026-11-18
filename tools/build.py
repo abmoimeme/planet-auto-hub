@@ -174,7 +174,13 @@ out = f'''<!DOCTYPE html>
     </div>
     <address>
       <p>{ic("pin")}<span><b>Planet Auto Hub</b><br>Rond-Point Liberté 6<br>Dakar, Sénégal</span></p>
-      <a class="lnk" href="https://www.google.com/maps/search/?api=1&amp;query=Planet+Auto+Hub+Rond+Point+Libert%C3%A9+6+Dakar" target="_blank" rel="noopener">{t("Ouvrir dans Google Maps", "Open in Google Maps")}</a>
+      <a class="lnk" href="https://www.google.com/maps/search/?api=1&amp;query=Planet+Auto+Hub+Dakar&amp;query_place_id=ChIJU5wBx7hzwQ4RvJ6JFwpzVng" target="_blank" rel="noopener">{t("Ouvrir dans Google Maps", "Open in Google Maps")}</a>
+      <dl class="hrs">
+        <dt>{t("Lundi à jeudi", "Monday to Thursday")}</dt><dd>9h00 – 20h00</dd>
+        <dt>{t("Vendredi", "Friday")}</dt><dd>9h00 – 13h30 · 14h30 – 20h00</dd>
+        <dt>{t("Samedi", "Saturday")}</dt><dd>9h00 – 20h00</dd>
+        <dt>{t("Dimanche", "Sunday")}</dt><dd>{t("Fermé", "Closed")}</dd>
+      </dl>
       <p class="soc">Facebook : Planet Auto Hub<br>Instagram · TikTok : @PlanetAutoHub</p>
     </address>
   </div>
