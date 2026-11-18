@@ -56,6 +56,7 @@ SERV = [
  ('globe', 'Commande spéciale', 'Special-order sourcing', 'Pièces d\'origine ou adaptables rares, commandées auprès de fournisseurs internationaux.', 'Rare OEM or aftermarket parts, ordered from international suppliers.'),
  ('fleet', 'Garages et flottes', 'Garages and fleets', 'Commandes régulières, listes de pièces par véhicule, tarifs professionnels.', 'Repeat orders, parts lists per vehicle, trade pricing.'),
 ]
+PH = {'engine': 'engine', 'drop': 'fluids', 'disc': 'brakes', 'battery': 'electrical', 'box': 'ac', 'globe': 'special'}
 STEPS = [
  ('Votre véhicule', 'Your vehicle', 'Marque, modèle, année, moteur. Le numéro de châssis si possible.', 'Make, model, year, engine. The chassis number if you can.'),
  ('La pièce', 'The part', 'Nom, photo de l\'ancienne pièce, référence, ou simplement la panne.', 'Name, photo of the old part, reference, or just the symptom.'),
@@ -134,7 +135,7 @@ out = f'''<!DOCTYPE html>
 <section id="pieces"><div class="w">
   {t("Ce que nous vendons", "What we sell", "h2")}
   {t("Des pièces neuves pour l'entretien courant et la réparation. Pas de prix en ligne : chaque pièce dépend du véhicule, demandez-nous un devis.", "New parts for routine service and repair. No prices online: every part depends on the vehicle, so ask us for a quote.", "p", "sub")}
-  <div class="grid g3">{''.join(f'<article class="cell">{ic(i)}{t(a, b, "h3")}{t(c, d, "p")}</article>' for i, a, b, c, d in CATS)}</div>
+  <div class="grid g3 pcs">{''.join(f'<article class="cell pc"><img class="ph" src="assets/parts/{PH[i]}.webp" alt="" width="800" height="500" loading="lazy" decoding="async">{t(a, b, "h3")}{t(c, d, "p")}</article>' for i, a, b, c, d in CATS)}</div>
   <div class="tiers">
     <div>{t("Origine", "Genuine", "h3")}{t("Pièce de marque constructeur, dans son emballage d'origine.", "Manufacturer-branded part in original packaging.", "p")}</div>
     <div>{t("Qualité équivalente", "OEM-quality", "h3")}{t("Fabricants reconnus : Bosch, Valeo, KYB, Monroe, TRW, Delphi.", "Established makers: Bosch, Valeo, KYB, Monroe, TRW, Delphi.", "p")}</div>
@@ -190,6 +191,7 @@ out = f'''<!DOCTYPE html>
 <footer><div class="w">
   <p><b>PLANET AUTO-HUB SUARL</b> · Rond-Point Liberté 6, Dakar, Sénégal · RCCM SN DKR 2025 B 40566 · NINEA 012552396</p>
   <p>{t("Ce site ne collecte aucune donnée personnelle : pas de formulaire, pas de cookie, pas de mesure d'audience. Vos messages WhatsApp sont traités dans WhatsApp, selon ses propres règles.", "This site collects no personal data: no forms, no cookies, no analytics. Your WhatsApp messages are handled within WhatsApp, under its own terms.")}</p>
+  <p>{t("Photos : Unsplash. Les marques visibles appartiennent à leurs propriétaires.", "Photos: Unsplash. Visible brands belong to their owners.")}</p>
   <p>© 2026 Planet Auto Hub</p>
 </div></footer>
 
