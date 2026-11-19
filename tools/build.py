@@ -141,7 +141,7 @@ out = f'''<!DOCTYPE html>
 <section id="pieces"><div class="w">
   {t("Ce que nous vendons", "What we sell", "h2")}
   {t("Des pièces neuves pour l'entretien courant et la réparation. Pas de prix en ligne : chaque pièce dépend du véhicule, demandez-nous un devis.", "New parts for routine service and repair. No prices online: every part depends on the vehicle, so ask us for a quote.", "p", "sub")}
-  <div class="grid g3 pcs">{''.join(f'<article class="cell pc"><img class="ph" src="assets/parts/{PH[i]}.webp" alt="" width="800" height="500" loading="lazy" decoding="async">{t(a, b, "h3")}{t(c, d, "p")}</article>' for i, a, b, c, d in CATS)}</div>
+  <div class="grid g3 pcs">{''.join(f'<article class="cell pc"><img class="ph" src="assets/parts/{PH[i]}.webp" alt="" width="640" height="400" loading="lazy" decoding="async">{t(a, b, "h3")}{t(c, d, "p")}</article>' for i, a, b, c, d in CATS)}</div>
   <div class="tiers">
     <div>{t("Origine", "Genuine", "h3")}{t("Pièce de marque constructeur, dans son emballage d'origine.", "Manufacturer-branded part in original packaging.", "p")}</div>
     <div>{t("Qualité équivalente", "OEM-quality", "h3")}{t("Fabricants reconnus : Bosch, Valeo, KYB, Monroe, TRW, Delphi.", "Established makers: Bosch, Valeo, KYB, Monroe, TRW, Delphi.", "p")}</div>

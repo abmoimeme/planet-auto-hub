@@ -1,0 +1,307 @@
+{
+ "label": "after",
+ "median": {
+  "logo_ms": 2254,
+  "font_ms": 2471,
+  "fcp": 572,
+  "lcp": 572,
+  "cls": 0.017,
+  "tbt": 34,
+  "load": 3165.0,
+  "cta_visible": 713,
+  "make_list_visible": 761.0,
+  "wa_link_visible": 836.0,
+  "imgs_missing_in_view": 1,
+  "wa_tapped": 936.0,
+  "requests": 34,
+  "kb": 307.0
+ },
+ "runs": [
+  {
+   "logo_ms": 2200,
+   "font_ms": 2467,
+   "fcp": 644,
+   "lcp": 644,
+   "cls": 0.017,
+   "tbt": 56,
+   "load": 3177,
+   "cta_visible": 713,
+   "make_list_visible": 761.0999999999767,
+   "wa_link_visible": 837.2999999999884,
+   "imgs_missing_in_view": 1,
+   "wa_tapped": 999.0999999999767,
+   "requests": 34,
+   "kb": 306.8
+  },
+  {
+   "logo_ms": 2272,
+   "font_ms": 2523,
+   "fcp": 572,
+   "lcp": 572,
+   "cls": 0.017,
+   "tbt": 39,
+   "load": 3163.9000000000233,
+   "cta_visible": 665.2000000000116,
+   "make_list_visible": 714.5,
+   "wa_link_visible": 792.7999999999884,
+   "imgs_missing_in_view": 1,
+   "wa_tapped": 923.4000000000233,
+   "requests": 34,
+   "kb": 306.8
+  },
+  {
+   "logo_ms": 2388,
+   "font_ms": 2471,
+   "fcp": 564,
+   "lcp": 564,
+   "cls": 0.017,
+   "tbt": 28,
+   "load": 3112.9000000000233,
+   "cta_visible": 638.0999999999767,
+   "make_list_visible": 667.7000000000116,
+   "wa_link_visible": 723.4000000000233,
+   "imgs_missing_in_view": 1,
+   "wa_tapped": 877.9000000000233,
+   "requests": 34,
+   "kb": 306.8
+  },
+  {
+   "logo_ms": 2168,
+   "font_ms": 2435,
+   "fcp": 632,
+   "lcp": 632,
+   "cls": 0.017,
+   "tbt": 17,
+   "load": 3165.2999999999884,
+   "cta_visible": 730.7000000000116,
+   "make_list_visible": 786.0999999999767,
+   "wa_link_visible": 836.4000000000233,
+   "imgs_missing_in_view": 1,
+   "wa_tapped": 935.5999999999767,
+   "requests": 34,
+   "kb": 306.8
+  },
+  {
+   "logo_ms": 2254,
+   "font_ms": 2487,
+   "fcp": 560,
+   "lcp": 560,
+   "cls": 0.017,
+   "tbt": 34,
+   "load": 3297.1999999999534,
+   "cta_visible": 743.0999999999767,
+   "make_list_visible": 793,
+   "wa_link_visible": 865.5999999999767,
+   "imgs_missing_in_view": 1,
+   "wa_tapped": 1028,
+   "requests": 34,
+   "kb": 306.8
+  }
+ ],
+ "waterfall": [
+  {
+   "url": "/",
+   "kb": 14.2,
+   "start": 0,
+   "end": 462
+  },
+  {
+   "url": "assets/montserrat.woff2",
+   "kb": 37.2,
+   "start": 370,
+   "end": 2471
+  },
+  {
+   "url": "assets/logo.webp",
+   "kb": 30.4,
+   "start": 429,
+   "end": 2388
+  },
+  {
+   "url": "assets/parts/engine.webp",
+   "kb": 20.2,
+   "start": 547,
+   "end": 2154
+  },
+  {
+   "url": "assets/parts/fluids.webp",
+   "kb": 17.6,
+   "start": 547,
+   "end": 2070
+  },
+  {
+   "url": "assets/parts/brakes.webp",
+   "kb": 10.5,
+   "start": 547,
+   "end": 1634
+  },
+  {
+   "url": "assets/parts/electrical.webp",
+   "kb": 35.1,
+   "start": 547,
+   "end": 2873
+  },
+  {
+   "url": "assets/parts/ac.webp",
+   "kb": 10.3,
+   "start": 547,
+   "end": 2906
+  },
+  {
+   "url": "assets/parts/special.webp",
+   "kb": 32.0,
+   "start": 551,
+   "end": 3108
+  },
+  {
+   "url": "assets/makes/toyota.webp",
+   "kb": 4.1,
+   "start": 888,
+   "end": 2672
+  },
+  {
+   "url": "assets/makes/lexus.webp",
+   "kb": 2.1,
+   "start": 889,
+   "end": 2823
+  },
+  {
+   "url": "assets/makes/nissan.webp",
+   "kb": 2.3,
+   "start": 889,
+   "end": 2923
+  },
+  {
+   "url": "assets/makes/mitsubishi.webp",
+   "kb": 2.6,
+   "start": 890,
+   "end": 3040
+  },
+  {
+   "url": "assets/makes/honda.webp",
+   "kb": 3.3,
+   "start": 891,
+   "end": 3175
+  },
+  {
+   "url": "assets/makes/mazda.webp",
+   "kb": 3.9,
+   "start": 892,
+   "end": 3225
+  },
+  {
+   "url": "assets/makes/peugeot.webp",
+   "kb": 3.9,
+   "start": 907,
+   "end": 3308
+  },
+  {
+   "url": "assets/makes/renault.webp",
+   "kb": 2.9,
+   "start": 910,
+   "end": 3292
+  },
+  {
+   "url": "assets/makes/citroen.webp",
+   "kb": 2.8,
+   "start": 911,
+   "end": 3375
+  },
+  {
+   "url": "assets/makes/mercedes-benz.webp",
+   "kb": 9.1,
+   "start": 924,
+   "end": 3559
+  },
+  {
+   "url": "assets/makes/bmw.webp",
+   "kb": 3.3,
+   "start": 924,
+   "end": 3660
+  },
+  {
+   "url": "assets/makes/audi.webp",
+   "kb": 3.2,
+   "start": 939,
+   "end": 3777
+  },
+  {
+   "url": "assets/makes/volkswagen.webp",
+   "kb": 4.1,
+   "start": 940,
+   "end": 3810
+  },
+  {
+   "url": "assets/makes/hyundai.webp",
+   "kb": 2.6,
+   "start": 955,
+   "end": 3794
+  },
+  {
+   "url": "assets/makes/kia.webp",
+   "kb": 1.3,
+   "start": 974,
+   "end": 3896
+  },
+  {
+   "url": "assets/makes/ford.webp",
+   "kb": 2.6,
+   "start": 986,
+   "end": 3995
+  },
+  {
+   "url": "assets/makes/chevrolet.webp",
+   "kb": 2.6,
+   "start": 987,
+   "end": 4112
+  },
+  {
+   "url": "assets/makes/gmc.webp",
+   "kb": 4.6,
+   "start": 1010,
+   "end": 4195
+  },
+  {
+   "url": "assets/makes/jeep.webp",
+   "kb": 1.4,
+   "start": 1021,
+   "end": 4146
+  },
+  {
+   "url": "assets/makes/dodge.webp",
+   "kb": 4.4,
+   "start": 1040,
+   "end": 4280
+  },
+  {
+   "url": "assets/makes/chrysler.webp",
+   "kb": 1.4,
+   "start": 1054,
+   "end": 4247
+  },
+  {
+   "url": "assets/makes/cadillac.webp",
+   "kb": 10.7,
+   "start": 1065,
+   "end": 4430
+  },
+  {
+   "url": "assets/makes/land-rover.webp",
+   "kb": 1.7,
+   "start": 1098,
+   "end": 4480
+  },
+  {
+   "url": "assets/makes/fiat.webp",
+   "kb": 2.9,
+   "start": 1117,
+   "end": 4497
+  },
+  {
+   "url": "assets/icon.png",
+   "kb": 15.5,
+   "start": 3119,
+   "end": 3911
+  }
+ ]
+}
